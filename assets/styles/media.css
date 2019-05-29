@@ -7,3 +7,7 @@ img {
 .img-small {
   max-width: 50%;
 }
+
+.img-xsmall {
+  max-width: calc(100%/3);
+}

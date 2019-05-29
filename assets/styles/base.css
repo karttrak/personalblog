@@ -33,3 +33,15 @@ p {
   flex-wrap: wrap;
   align-items: flex-start;
 }
+
+.flex-sm {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+  .flex-sm {
+    flex-wrap: nowrap;
+  }
+}
