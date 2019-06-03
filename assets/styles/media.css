@@ -4,10 +4,23 @@ img {
   padding: 0.14em;
 }
 
+.img-wrapper {
+  margin-bottom: 1em;
+}
+
 .img-small {
   max-width: 50%;
 }
 
 .img-xsmall {
   max-width: calc(100%/3);
+}
+
+.img-shadow {
+  box-shadow: 0 0 5px 3px lightgray;
+}
+
+.img-caption {
+  font-size: 0.8rem;
+  color: gray;
 }
