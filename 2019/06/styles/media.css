@@ -4,6 +4,20 @@ img {
   padding: 0.14em;
 }
 
+article p {
+  text-align: justify;
+}
+
+article .img-wrapper:nth-of-type(2n+1) {
+  float: right;
+  margin-left: 2em;
+}
+
+article .img-wrapper:nth-of-type(2n) {
+  float: left;
+  margin-right: 2em;
+}
+
 .img-wrapper {
   margin-bottom: 1em;
 }
