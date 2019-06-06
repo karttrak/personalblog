@@ -9,7 +9,7 @@ img {
 }
 
 .img-shadow {
-  box-shadow: 0 0 5px 3px lightgray;
+  box-shadow: 0 0 0.32em 0.2em lightgray;
 }
 
 .img-caption {
@@ -17,7 +17,7 @@ img {
   color: gray;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48em) {
   article p {
     text-align: justify;
   }
