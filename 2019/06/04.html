@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kyle of Write | Old watch v. new watch</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/media.css">
+
+  <style>
+    .img-expandable {
+      position: relative;
+      max-height: 500px;
+      overflow-y: hidden;
+      transition: 0.4s ease-in-out;
+      cursor: pointer;
+    }
+
+    .img-expandable.expanded {
+      max-height: 4514px;
+    }
+
+    .img-expandable:before {
+      content:'';
+      position: absolute;
+      display: block;
+      bottom: 0;
+      width: 100%;
+      height: calc(100% / 3);
+      max-height: 12em;
+      background-image: linear-gradient(transparent, #FAFAFA);
+      transition: 0.4s ease-in-out;
+    }
+
+    .img-expandable-icon {
+      position: absolute;
+      display: inline-block;
+      bottom: 1em;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2.5em;
+      height: 2.5em;
+      border: 0.1em solid currentColor;
+      border-radius: 100%;
+      color: black;
+      transition: 0.4s ease-in-out;
+    }
+
+    .img-expandable-icon:before,
+    .img-expandable-icon:after {
+      content: '';
+      position: relative;
+      display: inline-block;
+      top: 30%;
+      transform-origin: bottom;
+      width: 0.1em;
+      height: 1em;
+      background-color: currentColor;
+    }
+
+    .img-expandable-icon:before {
+      left: 49%;
+      transform: rotate(-45deg);
+    }
+
+    .img-expandable-icon:after {
+      left: 44%;
+      transform: rotate(45deg);
+    }
+
+    .img-expandable:hover .img-expandable-icon {
+      color: teal;
+    }
+
+    .img-expandable.expanded:before,
+    .img-expandable.expanded .img-expandable-icon {
+      opacity: 0;
+    }
+
+    .img-expandable.expanded:hover:before,
+    .img-expandable.expanded:hover .img-expandable-icon {
+      opacity: 1;
+    }
+
+    .img-expandable.expanded .img-expandable-icon {
+      transform: translateX(-50%) rotateX(180deg);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>
+    Old watch v. new watch
+  </h1>
+
+  <p>
+    I went on a run this morning. I wanted to see how my new Amazfit Bip compared to my old Apple Watch. I don't run with a phone, so my 1st gen Apple Watch doesn't do so well at estimating distances. I've finished a run just to map it at home and find that my "5 mile" run was actually 6 miles. That's a 20% increase! That's huge when it comes to measuring your pacing. And that wasn't uncommon. Today, however, the Apple Watch actually <i>overestimated</i> my distance. It put me at 5.35 miles when I was shooting for a 5 mile run. I was surprised to see the Bip ended up short at 4.73 miles. I checked at my turnaround point it read 2.52 miles. I looked at the GPS mapping it generated afterward to find that it had lagged and left me a quarter mile away by the time I ended it. That would definitely account for the pacing irregularity. I noticed toward the end of the run, the pace on the Bip was stuck at 5:04 mile pace, which was definitely faster than I was running. But in the summary, since it thought I had stopped running 2 minutes earlier, my pace for the last mile was calculated to be 13:27.
+  </p>
+
+  <p>
+    The heart rates were also not in agreement between the two watches. The Bip reached a peak of 160, though it mostly read in the 150s. But I <i>know</i> my heart rate reached 180+ during the hills. While the Apple Watch was able to record these peaks a little more accurately, it often times failed to read anything at all, or it would say my heart rate was in the 70s when that was clearly not the case. So while the Bip gives consistently low heart rate readings, the Apple Watch is not consistent at all. I will definitely need to try again with my new watch and see if things go more smoothly the next time around.
+  </p>
+
+  <p>
+    All that being said, I do like the breakdown of data the Mi Fit app shows (the app for the Amazfit). It's been a long time since I have been able to get accurate mile splits for my runs. And the altitude graph is kind of neat.
+  </p>
+
+  <div class="img-wrapper">
+    <div class="img-expandable">
+      <img src="images/bip-run.jpg" />
+      <div class="img-expandable-icon"></div>
+    </div>
+  </div>
+
+
+  <script>
+    document.querySelector('.img-expandable').addEventListener('click', function() {
+      let imgExpandable = document.querySelector('.img-expandable');
+      if (imgExpandable.classList.contains('expanded')) {
+        imgExpandable.classList.remove('expanded');
+      } else {
+        imgExpandable.classList.add('expanded');
+      }
+    });
+  </script>
+
+</body>
+
+</html>
