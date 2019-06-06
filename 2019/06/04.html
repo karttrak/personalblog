@@ -54,7 +54,7 @@
       content: '';
       position: relative;
       display: inline-block;
-      top: 30%;
+      top: 25%;
       transform-origin: bottom;
       width: 0.1em;
       height: 1em;
@@ -75,6 +75,11 @@
       color: teal;
     }
 
+    .img-expandable:hover .img-expandable-icon:before,
+    .img-expandable:hover .img-expandable-icon:after {
+      animation: arrow-bounce 1.2s linear 1.5s infinite;
+    }
+
     .img-expandable.expanded:before,
     .img-expandable.expanded .img-expandable-icon {
       opacity: 0;
@@ -87,6 +92,14 @@
 
     .img-expandable.expanded .img-expandable-icon {
       transform: translateX(-50%) rotateX(180deg);
+    }
+
+    @keyframes arrow-bounce {
+      0% { top: 25% }
+      25% { top: 30% }
+      50% { top: 25% }
+      75% { top: 20% }
+      100% { top: 25% }
     }
   </style>
 </head>
