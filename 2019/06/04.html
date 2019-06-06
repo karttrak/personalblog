@@ -52,9 +52,10 @@
     .img-expandable-icon:before,
     .img-expandable-icon:after {
       content: '';
-      position: relative;
+      position: absolute;
       display: inline-block;
       top: 25%;
+      left: 48%;
       transform-origin: bottom;
       width: 0.1em;
       height: 1em;
@@ -62,12 +63,10 @@
     }
 
     .img-expandable-icon:before {
-      left: 49%;
       transform: rotate(-45deg);
     }
 
     .img-expandable-icon:after {
-      left: 44%;
       transform: rotate(45deg);
     }
 
