@@ -8,7 +8,7 @@ body {
   max-width: 50rem;
   padding: 1em;
   background-color: #FAFAFA;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 section + section {
@@ -21,12 +21,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
-h1 { font-size: 2.986rem; }
-h2 { font-size: 2.488rem; }
-h3 { font-size: 2.074rem; }
-h4 { font-size: 1.728rem; }
-h5 { font-size: 1.440rem; }
-h6 { font-size: 1.200rem; }
+h1 { font-size: 1.771rem; }
+h2 { font-size: 1.610rem; }
+h3 { font-size: 1.464rem; }
+h4 { font-size: 1.331rem; }
+h5 { font-size: 1.210rem; }
+h6 { font-size: 1.100rem; }
 
 p {
   margin-bottom: 0.8em;
@@ -58,5 +58,18 @@ a:hover {
 
   .img-wrapper {
     text-align: center;
+  }
+}
+
+@media (min-width: 48rem) {
+  h1 { font-size: 2.986rem; }
+  h2 { font-size: 2.488rem; }
+  h3 { font-size: 2.074rem; }
+  h4 { font-size: 1.728rem; }
+  h5 { font-size: 1.440rem; }
+  h6 { font-size: 1.200rem; }
+
+  p {
+    font-size: 1.2rem;
   }
 }
