@@ -38,6 +38,11 @@ a:hover {
   text-decoration: underline;
 }
 
+pre {
+  font-family: monospace;
+  font-size: 1rem;
+}
+
 .italic {
   font-style: italic;
 }
