@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kyle of Write | Colorado</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/media.css">
+
+  <style>
+    @media (max-width: 47.99em) {
+      .img-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 30em;
+      }
+
+      .collage .img-wrapper:nth-child(2) {
+        display: none;
+      }
+    }
+
+    @media (min-width: 48em) {
+      .collage {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .collage .img-wrapper:nth-child(1) { width: 35.6%; }
+      .collage .img-wrapper:nth-child(2) { width: 63.5%; }
+      .collage .img-wrapper:nth-child(3) { width: 100%; }
+
+      .img-wrapper.float-right {
+        float: right;
+        padding-left: 1em;
+        width: 50%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Colorado</h1>
+
+  <p>
+    My family and I arrived in Colorado yesterday. I haven't been here in maybe 10 years. Though I guess it isn't far from Utah, so the sights should feel pretty familiar.
+  </p>
+
+  <p>
+    My sister and I started off the morning with a little gym routine. She heard about this leg and core workout that she wanted to try. A thousand squats and sit-ups later, we went back up to shower for the day. We wanted to get crêpes for breakfast, but no one else was that excited to go, so we just went by ourselves. The line was taking foreve, but then they let us know they had a 2nd location that usually doesn't have a line. We finally went over there and it was much faster. I had a crêpe with smoked salmon and hollandaise sauce. Pretty tasty. And it came with great views.
+  </p>
+
+  <div class="collage">
+    <div class="img-wrapper">
+      <img src="images/crepe.jpg" />
+    </div>
+    <div class="img-wrapper">
+      <img src="images/mountain-flower.jpg" />
+    </div>
+    <div class="img-wrapper">
+      <img src="images/mountain.jpg" />
+    </div>
+  </div>
+
+  <div class="img-wrapper float-right">
+    <img src="images/co-patio.jpg" />
+    <div class="img-caption">Relaxing on the patio and enjoying the view</div>
+  </div>
+
+  <p>
+    My parents made a reservation for dinner. But until then, the kids wanted to go swimming in the heated pool outside. I took a quick dip with them. Even heated, it was still pretty cold outside, which made getting out of the water not seem that appealing. I decided to overheat myself in the hot tub so the cool air would actually feel nice. I gotta say, that worked pretty well. After 10 or so minutes in the hot tub, the chilling air was a welcome and refreshing. After another shower, we went off to dinner.
+  </p>
+
+  <p>
+    The restaurant was pretty nice. Live music, attentive waiters, and delicious food. I even got to eat everyone's leftovers, so I definitely couldn't complain about being hungry afterward. We wrapped up the night with watching Nightcrawler. We started the movie earlier in the day, but I guess the channel was playing it all day. We even got to jump back in right around where we left off before dinner. It's an odd movie. The main character is some crazy guy who only cares about getting the news story. Jake Gyllenhaal can play crazy well. Tomorrow, my sister and I are going to try to do an early morning hike to beat the rain. The forecast says the rain will start at 9am. But the weather isn't looking good this week, so this may be the only opportunity we have for a good hike before my sister leaves early. Fingers crossed for good weather.
+  </p>
+
+</body>
+
+</html>
