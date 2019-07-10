@@ -1,0 +1,43 @@
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-shadow {
+  box-shadow: 0 0 0.32em 0.2em lightgray;
+}
+
+.img-caption {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+@media (min-width: 48em) {
+  article p {
+    text-align: justify;
+  }
+
+  article .img-wrapper:nth-of-type(2n+1) {
+    float: right;
+    margin-left: 2em;
+  }
+
+  article .img-wrapper:nth-of-type(2n) {
+    float: left;
+    margin-right: 2em;
+  }
+
+  .img-small {
+    max-width: 50%;
+  }
+
+  .img-xsmall {
+    max-width: calc(100%/3);
+  }
+}
