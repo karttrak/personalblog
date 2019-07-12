@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Small Improvements | Header time! (Also, how websites are ran?)</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,400i&display=swap">
+</head>
+
+<body>
+  <header>
+    <a href="/">Small Improvements</a>
+  </header>
+
+  <h1>
+    Header time! (Also, how websites are ran?)
+  </h1>
+
+  <p>
+    I've put it off far too long. This site needs a header. I've been wanting a link back to the homepage for a while now. I don't know how I want to style the header, but that's fine. It'll just be super simple for now. I don't even really have a way to make it more complicated. I don't have a logo or any other pages to link to. My site is just a series of posts so far.
+  </p>
+
+  <h2>Problem (and here is where I teach computer)</h2>
+
+  <p>
+    The annoying part right now is that my link doesn't work while I am developing the website on my computer. For those who aren't familiar with web development, there are different "environments" in which a website can run.
+  </p>
+
+  <h3>Production</h3>
+
+  <p>
+    What you typically see is called the <i>production</i> environment. This is when the website is completely visible to the public. For this site, <a href="/">kylethornburgh.com</a> is the production environment. I can view it on my phone, send a link to my friends, Google can find it, whatever. No restrictions (unless I place restrictions on it). However, this doesn't require some magical sacrifice to the internet gods to make my site visible to the world. It's just running on a computer. I could run a publicly visible website on <i>my own</i> computer if I wanted to. But then if I ever needed to update my computer and restart it, my website would go down. This is why websites are generally being run on <i>someone else's</i> computer, AKA "the cloud." Amazon is much better at keeping their machines running than I am. And if their computers need to do a software update? They have other computers that will keep your website running while they handle the update. This is why so many people use Amazon, or any other hosting providor, instead of running their own servers.
+  </p>
+
+  <h3>Development</h3>
+
+  <p>
+    Then there is the <i>development</i> environment. This is typically done on the developer's own machine. It's just like if I were to use my computer to run my site for the whole world to see, but instead it's set up in a way that makes the website only visible to me. Now, instead of going to <a href="/">kylethornburgh.com</a>, I type "localhost" into my web browser. This is telling my browser, "Hey instead of searching the internet for this website, just look for a server running on this computer."
+  </p>
+
+  <p>
+    That last bit is what is causing the issue with my link that I am adding. I can't just link to <a href="http://kylethornburgh.com">kylethornburgh.com</a> because that will take me from my development environment to my production environment. But I want to stay in my development environment while I am trying to test my site. I need to tell my computer to go back to the homepage of my localhost.
+  </p>
+
+  <h3>Staging</h3>
+
+  <p>
+    Another popular environment is the <i>staging</i> environment. This is very similar to the production environment, but now with some added restrictions. In a staging environment, you generally want to limit who can see your website. This is done to allow certain people to test your website in an environment that is <i>as close as possible</i> to your production environment. However, you don't want just <i>anyone</i> to find this version because it is much more likely to be broken.
+  </p>
+
+  <p>
+    You can do a couple things to place restrictions on this staging environment. You can make the website require a password. This is useful if you want to give anyone the <i>ability</i> to view the staging website, but not without your permission. Generally this approach is better if you are building a website for clients who want to be able to view the staging site. You can also require that the staging site is viewed while connected to a specific wifi. That's probably better for development teams without external clients because you don't have to enter a password each time you want to test the site. But you do lose the ability to share the website with other people.
+  </p>
+</body>
+
+</html>
