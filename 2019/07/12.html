@@ -27,33 +27,43 @@
   <h2>Problem (and here is where I teach computer)</h2>
 
   <p>
-    The annoying part right now is that my link doesn't work while I am developing the website on my computer. For those who aren't familiar with web development, there are different "environments" in which a website can run.
+    The annoying part right now is that my link doesn't work while I am developing the website on my computer. Let's go over a little background first. This is only vaguely relevant, but I got the idea in my head and now I just want to go over how web development work on a general level. For those who aren't familiar with web development, there are different "environments" in which a website can run. If you are already familiar with environments, feel free to move on to the last section.
   </p>
 
   <h3>Production</h3>
 
   <p>
-    What you typically see is called the <i>production</i> environment. This is when the website is completely visible to the public. For this site, <a href="/">kylethornburgh.com</a> is the production environment. I can view it on my phone, send a link to my friends, Google can find it, whatever. No restrictions (unless I place restrictions on it). However, this doesn't require some magical sacrifice to the internet gods to make my site visible to the world. It's just running on a computer. I could run a publicly visible website on <i>my own</i> computer if I wanted to. But then if I ever needed to update my computer and restart it, my website would go down. This is why websites are generally being run on <i>someone else's</i> computer, AKA "the cloud." Amazon is much better at keeping their machines running than I am. And if their computers need to do a software update? They have other computers that will keep your website running while they handle the update. This is why so many people use Amazon, or any other hosting providor, instead of running their own servers.
+    What you typically see is called the <i>production</i> environment. This is when the website is completely visible to the public. For this site, <a href="/">kylethornburgh.com</a> is the production environment. I can view it on my phone, send a link to my friends, Google can find it, whatever. No restrictions (unless I place restrictions on it). However, this doesn't require some magical sacrifice to the internet gods to make my site visible to the world. It's just running on a computer. I could run a publicly visible website on <i>my own</i> computer if I wanted to. But then if I ever needed to update my computer and restart it, my website would go down. This is why websites are generally being run on <i>someone else's</i> computer, AKA "the cloud." Amazon is much better at keeping their machines (computers) running than I am. And if their computers need to do a software update? They have other computers that will keep your website running while they handle the update. This is why so many people use Amazon, or any other hosting providor, instead of running their own servers.
   </p>
 
   <h3>Development</h3>
 
   <p>
-    Then there is the <i>development</i> environment. This is typically done on the developer's own machine. It's just like if I were to use my computer to run my site for the whole world to see, but instead it's set up in a way that makes the website only visible to me. Now, instead of going to <a href="/">kylethornburgh.com</a>, I type "localhost" into my web browser. This is telling my browser, "Hey instead of searching the internet for this website, just look for a server running on this computer."
-  </p>
-
-  <p>
-    That last bit is what is causing the issue with my link that I am adding. I can't just link to <a href="http://kylethornburgh.com">kylethornburgh.com</a> because that will take me from my development environment to my production environment. But I want to stay in my development environment while I am trying to test my site. I need to tell my computer to go back to the homepage of my localhost.
+    Then there is the <i>development</i> environment. This is typically done on the developer's own machine. It's just like if I were to use my computer to run my site for the whole world to see, but instead it's set up in a way that makes the website only visible to me. Now, instead of going to <a href="/">kylethornburgh.com</a>, I type "localhost" into my web browser. This is telling my browser, "Hey instead of searching the internet for this website, just look for a server running on this computer." Then my own server will show me the website I am working on.
   </p>
 
   <h3>Staging</h3>
 
   <p>
-    Another popular environment is the <i>staging</i> environment. This is very similar to the production environment, but now with some added restrictions. In a staging environment, you generally want to limit who can see your website. This is done to allow certain people to test your website in an environment that is <i>as close as possible</i> to your production environment. However, you don't want just <i>anyone</i> to find this version because it is much more likely to be broken.
+    Another popular environment is the <i>staging</i> environment. This is very similar to the production environment, but now with some added restrictions. In a staging environment, you generally want to limit who can see your website. This is done to allow certain people to test your website in an environment that is <b>as close as possible</b> to your production environment. However, you don't want just <i>anyone</i> to find this version because it is much more likely to be broken.
   </p>
 
   <p>
-    You can do a couple things to place restrictions on this staging environment. You can make the website require a password. This is useful if you want to give anyone the <i>ability</i> to view the staging website, but not without your permission. Generally this approach is better if you are building a website for clients who want to be able to view the staging site. You can also require that the staging site is viewed while connected to a specific wifi. That's probably better for development teams without external clients because you don't have to enter a password each time you want to test the site. But you do lose the ability to share the website with other people.
+    You can do a couple things to place restrictions on this staging environment. You can make the website require a password. This is useful if you want to give anyone the <i>ability</i> to view the staging website, but not without your permission. Generally this approach is good if you are building a website for clients who want to be able to view the staging site to see new designs and features before they go into production. You can also require that the staging site is viewed while connected to a specific wifi. That's better for development teams without external clients because you don't have to enter a password each time you want to test the site. But you do lose the ability to share the website with other people if the wifi connection is the only way to grant access to your staging environment.
+  </p>
+  
+  <h2>How does it relate?</h2>
+  
+  <p>
+    That was a very long-winded way for me to say that each environment requires a different URL to go to the homepage. For my production environment, I just have to enter "/" as the URL. This tells the browser to go to the "root" of the current website, which turns out to be the homepage. However, that link would not point to the homepage in my development environment. You see, I am not currently using any framework to create my website. I just create a bunch of files and put them in folders. No servers necessary. That is why my URL structure looks so much like HTML files placed in folders organized by date &ndash; because that is exactly how it'set up. This is the easiest way to get a simple website started, but this reduces my flexibility in managing my files and customizing URLs. If I had some sort of backend where I could handle HTTP requests, then I would be able to choose which file I showed the user based on the URL.
+  </p>
+  
+  <p>
+    Anyway, I digress again. That explains URLs, but not how links differ between environments. Like I said, my website is set up so that whatever URL you enter correlates directly to the location of a file I have created (if I have not created a file for that URL, the you will get a 404 page saying my website cannot find that file). This works the same in my development environment, but my computer is set up a little differently than the computer running my production environment. "/" (the root) points to the highest level folder, which is where the homepage is located in the production environment. However, when my own computer searches for the root, it skips right past my homepage and goes to the highest level folder on my computer, which contains nothing related to my website at all. That is where all the scary, important folders live on a computer. Clicking the "/" link in development shows me which disk drives I have in my computer rather than which posts I have on my site. Not ideal.
+  </p>
+  
+  <p>
+    Another option to use instead of a direct link to the root page is to do a relative link. If my link is "../../" then I am telling the browser to go 2 folders up from the file I am looking at now. If I am currently in the "07" folder looking at the "12.html" file, then 1 folder up is the "2019" folder, and another level above that is my root folder. That is where my "index.html" file is located (which is the default file that will be opened up if nothing else is specified) and would display my homepage. Fortunately, this would work for both the production <i>and</i> the development environments. However, it just feels <i>wrong</> to use a relative URL that just goes to the homepage. Home is "/" and I am sticking to my guns! Plus if I decide to use a framework that allows me to display whatever file I want for the URL, then I may eventually rearrange my files, and that would require me to update all my links. I am just going to suffer through using "/" for the sake of correctness and future optimism.
   </p>
 </body>
 
