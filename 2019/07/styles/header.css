@@ -1,0 +1,9 @@
+header {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: lightgray;
+}
+
+header a {
+  color: currentColor;
+}

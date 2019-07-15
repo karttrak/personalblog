@@ -7,10 +7,12 @@
   <title>Small Improvements | Header time! (Also, how websites are ran?)</title>
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/utils.css">
+  <link rel="stylesheet" href="styles/layout.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,400i&display=swap">
 </head>
 
-<body>
+<body class="container pt-100 pb-100">
   <header>
     <a href="/">Small Improvements</a>
   </header>
@@ -50,17 +52,17 @@
   <p>
     You can do a couple things to place restrictions on this staging environment. You can make the website require a password. This is useful if you want to give anyone the <i>ability</i> to view the staging website, but not without your permission. Generally this approach is good if you are building a website for clients who want to be able to view the staging site to see new designs and features before they go into production. You can also require that the staging site is viewed while connected to a specific wifi. That's better for development teams without external clients because you don't have to enter a password each time you want to test the site. But you do lose the ability to share the website with other people if the wifi connection is the only way to grant access to your staging environment.
   </p>
-  
+
   <h2>How does it relate?</h2>
-  
+
   <p>
     That was a very long-winded way for me to say that each environment requires a different URL to go to the homepage. For my production environment, I just have to enter "/" as the URL. This tells the browser to go to the "root" of the current website, which turns out to be the homepage. However, that link would not point to the homepage in my development environment. You see, I am not currently using any framework to create my website. I just create a bunch of files and put them in folders. No servers necessary. That is why my URL structure looks so much like HTML files placed in folders organized by date &ndash; because that is exactly how it'set up. This is the easiest way to get a simple website started, but this reduces my flexibility in managing my files and customizing URLs. If I had some sort of backend where I could handle HTTP requests, then I would be able to choose which file I showed the user based on the URL.
   </p>
-  
+
   <p>
     Anyway, I digress again. That explains URLs, but not how links differ between environments. Like I said, my website is set up so that whatever URL you enter correlates directly to the location of a file I have created (if I have not created a file for that URL, the you will get a 404 page saying my website cannot find that file). This works the same in my development environment, but my computer is set up a little differently than the computer running my production environment. "/" (the root) points to the highest level folder, which is where the homepage is located in the production environment. However, when my own computer searches for the root, it skips right past my homepage and goes to the highest level folder on my computer, which contains nothing related to my website at all. That is where all the scary, important folders live on a computer. Clicking the "/" link in development shows me which disk drives I have in my computer rather than which posts I have on my site. Not ideal.
   </p>
-  
+
   <p>
     Another option to use instead of a direct link to the root page is to do a relative link. If my link is "../../" then I am telling the browser to go 2 folders up from the file I am looking at now. If I am currently in the "07" folder looking at the "12.html" file, then 1 folder up is the "2019" folder, and another level above that is my root folder. That is where my "index.html" file is located (which is the default file that will be opened up if nothing else is specified) and would display my homepage. Fortunately, this would work for both the production <i>and</i> the development environments. However, it just feels <i>wrong</i> to use a relative URL that just goes to the homepage. Home is "/" and I am sticking to my guns! Plus if I decide to use a framework that allows me to display whatever file I want for the URL, then I may eventually rearrange my files, and that would require me to update all my links. I am just going to suffer through using "/" for the sake of correctness and future optimism.
   </p>
