@@ -21,15 +21,19 @@
 
   <div class="grid-content container">
     <h1>
-      Header time! (Part 2)
+      Header time! (Part&nbsp;2)
     </h1>
 
     <p>
-      Okay the header I made was pretty pathetic. It isn't so much of a header as it's just a simple link back to the homepage. I started the post in the morning at home and then ended up going to my parents' house where I have no computer to do development work.
+      Okay so the header I first made was pretty pathetic. It wasn't so much of a header as it was just a simple link back to the homepage. I started the post in the morning at home and then ended up going to my parents' house where I had no computer to do development work. I was able to finish the content of the post by just editing the HTML directly on Github, but styling would have been too much. I also realized I would have to update previous posts to accommodate for the change so they wouldn't break. That was way too much to do without a development environment so I decided to push it off for today.
     </p>
 
     <p>
-      There are a couple issues I want to fix in my header. First, it needs color. I don't necessarily care <i>what</i> color right now, but it can't just blend in with the rest of the page.
+      There were a couple issues that I wanted to fix in my header. First, it needed some color. I don't even really care <i>what</i> color right now, but it can't just blend in with the rest of the page. Second, you couldn't see it because the header was the same color as the rest of the page, but the header wasn't wide enough. With the old page layout, the header could only span as wide as the text. I want the header to be the full width of the page, so I had to rearrange some things. Since I was restricting the width of the body element in a shared CSS file, that meant I had to update all the previous July posts to add a new container for the content of the posts, otherwise they would span the full width of the screen.
+    </p>
+
+    <p>
+      As it stands now, the header is still a simple link back to the homepage, but at least now it looks a little more like a header. I will have to keep updating it as the site grows to add links and maybe even a menu if it starts to get a little busy on mobile. I considered fixing the header to the top of the page, but I decided against it. At least for now. It's much simple just to keep it in the normal page flow and not have to worry about managing the padding to push the main content of the page down. It's not like there is very much of use in the header, so it doesn't need to be visible all the time. Plus it allows for more screen space on mobile. I have seen some websites have <i>huge</i> headers and footers on mobile that were fixed to the top and bottom of the page and just made the whole site unusable. If you rotated your phone into landscape mode, some exceedingly egregious sites would have the large header and footer overlapping so you couldn't even see the page content <i>at all</i>. Don't do that, kids. It's bad.
     </p>
   </div>
 </body>
