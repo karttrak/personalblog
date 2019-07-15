@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Small Improvements | Weekend dining</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,400i&display=swap">
+
+  <style>
+    .popup-target {
+      border-bottom: 1px dashed gray;
+    }
+    .popup {
+      position: absolute;
+      right: 0;
+      transform: translateY(-100%);
+      padding: 0.1em 0.5em;
+      min-width: 18em;
+      opacity: 0;
+      background-color: #EEF;
+      border: 1px dashed #AAD;
+      transition: 0.1s opacity ease-in-out;
+      transition-delay: 0s;
+    }
+    .popup-target:hover > .popup,
+    .popup-target:active > .popup {
+      opacity: 1;
+      transition-delay: 0.3s;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="/">Small Improvements</a>
+    </div>
+  </header>
+
+  <div class="grid-content container">
+    <h1>
+        Weekend dining
+    </h1>
+
+    <p>
+      This weekend has brought a lot of delicious food to my face. I went to Bartaco with a couple friends on Saturday. During the 1-1.5 hour wait, we decided to go to Cheesetique for drinks an appetizers. I ordered some warms oviles with manchego cheese. I was skeptical of the "warm" part of the olives. Olives don't need to be warm. They are delicious cold! But once I had them, I understood. I think the heat was meant more to soften the cheese rather than for the olives, but it was a perfect pairing. And it actually wasn't a bad price. $6 for a pretty large bowl. The olives tub I get from the olive bar usually comes out to around $7-8, but it's bigger. $6 for olives <i>and</i> cheese? AND warm?? I'll order it every time. We also got recommended the fried cheese curds by a native Wisconsinite. That was a <i>very</i> worthwhile recommendation. However, 2 minutes after our food came, we got a text saying our table at Bartaco was ready, even though it had only been 20-30 minutes. I appreciate a speedy wait, but GIVE US MORE OF A HEADS UP! You <i>know</i> your restaurant is surrounded by a shopping center, and you give us an hour+ to wander off. <i>Of course</i> we are going to be in the middle of something. Saying "Be is in 5 minutes or you lose your table!" ain't cool. &lt;&sol;rant&gt; We had to pack up, pay, and run away from a relaxing, enjoyable experience.
+    </p>
+
+    <p>
+      Anyway, <span class="popup-target">Bartaco really knows how to make tacos. They also have a good bar.<span class="popup">I don't know how they mustered up the creativity for their name.</span></span> I ventured out a bit and tried a seared swordfish taco, which was great. I still think my favorite was the pulled pork carnitas. There is a reason carnitas are a classic taco filling.
+    </p>
+  </div>
+</body>
+
+</html>
