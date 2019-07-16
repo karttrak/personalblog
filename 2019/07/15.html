@@ -7,8 +7,10 @@
   <title>Small Improvements | Weekend dining</title>
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/utils.css">
   <link rel="stylesheet" href="styles/layout.css">
   <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/media.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,400i&display=swap">
 
   <style>
@@ -32,6 +34,30 @@
       opacity: 1;
       transition-delay: 0.3s;
     }
+
+    @media (min-width: 48em) {
+      .collage {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .collage {
+        display: grid;
+        grid-gap: 0.5em;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+          'l r'
+          'b b'
+          'c c'
+      }
+
+      .collage > img:nth-child(1) { grid-area: l; }
+      .collage > img:nth-child(2) { grid-area: r; }
+      .collage > img:nth-child(3) { grid-area: b; }
+      .collage > .img-caption { grid-area: c; }
+    }
   </style>
 </head>
 
@@ -42,18 +68,38 @@
     </div>
   </header>
 
-  <div class="grid-content container">
+  <div class="grid-content container pt-100 pb-100">
     <h1>
         Weekend dining
     </h1>
 
+    <h2>Saturday</h2>
+
     <p>
-      This weekend has brought a lot of delicious food to my face. I went to Bartaco with a couple friends on Saturday. During the 1-1.5 hour wait, we decided to go to Cheesetique for drinks an appetizers. I ordered some warms oviles with manchego cheese. I was skeptical of the "warm" part of the olives. Olives don't need to be warm. They are delicious cold! But once I had them, I understood. I think the heat was meant more to soften the cheese rather than for the olives, but it was a perfect pairing. And it actually wasn't a bad price. $6 for a pretty large bowl. The olives tub I get from the olive bar usually comes out to around $7-8, but it's bigger. $6 for olives <i>and</i> cheese? AND warm?? I'll order it every time. We also got recommended the fried cheese curds by a native Wisconsinite. That was a <i>very</i> worthwhile recommendation. However, 2 minutes after our food came, we got a text saying our table at Bartaco was ready, even though it had only been 20-30 minutes. I appreciate a speedy wait, but GIVE US MORE OF A HEADS UP! You <i>know</i> your restaurant is surrounded by a shopping center, and you give us an hour+ to wander off. <i>Of course</i> we are going to be in the middle of something. Saying "Be is in 5 minutes or you lose your table!" ain't cool. &lt;&sol;rant&gt; We had to pack up, pay, and run away from a relaxing, enjoyable experience.
+      This weekend has brought a lot of delicious food to my face. I went to Bartaco with a couple friends on Saturday. During the 1-1.5 hour wait, we decided to go to Cheesetique for drinks an appetizers. I ordered some warms oviles with manchego cheese. I was skeptical of the "warm" part of the olives. Olives don't need to be warm. They are delicious cold! But once I had them, I understood. I think the heat was meant more to soften the cheese rather than for the olives, but it was a perfect pairing. And it actually wasn't a bad price. $6 for a pretty large bowl. The olives tub I get from the olive bar usually comes out to around $7-8, but it's bigger. $6 for olives <i>and</i> cheese? AND warm?? I'll order it every time. We also got recommended the fried cheese curds by a native Wisconsinite. That was a <i>very</i> worthwhile recommendation. However, 2 minutes after our food came, we got a text saying our table at Bartaco was ready, even though it had only been 20-30 minutes. I appreciate a speedy wait, but GIVE US MORE OF A HEADS UP! You <i>know</i> your restaurant is surrounded by a shopping center, and you give us an hour+ to wander off. <i>Of course</i> we are going to be in the middle of something. Saying "Be here in 5 minutes or you lose your table!" ain't cool. &lt;&sol;rant&gt; We had to pack up, pay, and run away from a relaxing, enjoyable experience.
     </p>
 
     <p>
-      Anyway, <span class="popup-target">Bartaco really knows how to make tacos. They also have a good bar.<span class="popup">I don't know how they mustered up the creativity for their name.</span></span> I ventured out a bit and tried a seared swordfish taco, which was great. I still think my favorite was the pulled pork carnitas. There is a reason carnitas are a classic taco filling.
+      Anyway, <span class="popup-target">Bartaco really knows how to make tacos. They also have a good bar.<span class="popup">I don't know how they mustered up the creativity for their name.</span></span> We all split a pitcher of tasty, tasty margaritas. I ventured out a bit and tried a seared swordfish taco, which was great. I still think my favorite was the pulled pork carnitas. There is a reason carnitas are a classic taco filling. I think we ended up eating 15 tacos between the 3 of us. Then we capped off the night with some cider at my friend's place.
     </p>
+
+    <h2>Sunday</h2>
+
+    <p>
+      Sunday brought different friends and different restuarants. We all met up at Cava Mezze for brunch. We didn't do the boozy bottomless, but we still ordered a decentt amount of small plates. It wasn't as filling as the bottomless brunch, unfortunately. I really thought the plates they bring out during bottomless brunch would be smaller than normal, but <i>those are actual size!</i> It's crazy to me that $8 just gets you one egg with two small bites of pork belly. I really don't think the a la carte brunch is worth it at most of these places that offer bottomless brunch. Either way, we had fun and enjoyed some food. Then we all went out to South Block, which I had never been to before. It's an acai bowl place. Pretty good.
+    </p>
+
+    <p>
+      A few pictures from Cava:
+    </p>
+
+    <div class="collage">
+      <img src="media/cava-don.jpg" />
+      <img src="media/cava-david.jpg" />
+      <img src="media/cava-kid.jpg" />
+      <p class="img-caption">We had multiple phones taking pictures. I just picked the wrong phone to look at.</p>
+    </div>
+
   </div>
 </body>
 
