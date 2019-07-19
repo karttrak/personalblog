@@ -1,6 +1,6 @@
 ## Website
 
-[Kyle of Write](https://karttrak.github.io/personalblog/)
+[Smimps](https://karttrak.github.io/personalblog/)
 
 ## License
 
