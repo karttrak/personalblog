@@ -5,9 +5,9 @@ ol, ul, li,
 blockquote, cite,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside,
-footer, header,
-menu, nav, section {
+header, footer,
+menu, nav, aside,
+main, article, section {
 	margin: 0;
 	padding: 0;
 	border: 0;
