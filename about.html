@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>InkImps | About</title>
-  <link rel="stylesheet" href="../2019/07/styles/reset.css">
-  <link rel="stylesheet" href="../2019/07/styles/base.css">
-  <link rel="stylesheet" href="../2019/07/styles/utils.css">
-  <link rel="stylesheet" href="../2019/07/styles/layout.css">
-  <link rel="stylesheet" href="../2019/07/styles/header.css">
-  <link rel="stylesheet" href="../2019/07/styles/media.css">
+  <link rel="stylesheet" href="2019/07/styles/reset.css">
+  <link rel="stylesheet" href="2019/07/styles/base.css">
+  <link rel="stylesheet" href="2019/07/styles/utils.css">
+  <link rel="stylesheet" href="2019/07/styles/layout.css">
+  <link rel="stylesheet" href="2019/07/styles/header.css">
+  <link rel="stylesheet" href="2019/07/styles/media.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,400i&display=swap">
 
   <style>
@@ -21,13 +21,32 @@
       font-family: 'Roboto Slab', Georgia, serif;
       color: #6B07C9;
     }
+
+    @media (max-width: 47.99rem) {
+      header {
+        text-align: center;
+      }
+      nav {
+        display: none;
+      }
+    }
+
+    @media (min-width: 48rem) {
+      .display-flex {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
   </style>
 </head>
 
 <body>
   <header>
-    <div class="container">
-      <a class="kyle-style" href="/">InkImps</a>
+    <div class="container display-flex">
+      <a href="/" class="logo kyle-style">InkImps</a>
+      <nav>
+        <a href="about.html" class="nav-link">About</a>
+      </nav>
     </div>
   </header>
 
