@@ -13,12 +13,33 @@
   <link rel="stylesheet" href="2019/07/styles/header.css">
   <link rel="stylesheet" href="2019/07/styles/media.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,400i&display=swap">
+
+  <style>
+    @media (max-width: 47.99rem) {
+      header {
+        text-align: center;
+      }
+      nav {
+        display: none;
+      }
+    }
+
+    @media (min-width: 48rem) {
+      .display-flex {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  </style>
 </head>
 
 <body>
   <header>
-    <div class="container">
-      <b>Small Improvements</b>
+    <div class="container display-flex">
+      <a href="/" class="logo">Small Improvements</a>
+      <nav>
+        <a href="about.html" class="nav-link">About</a>
+      </nav>
     </div>
   </header>
 
