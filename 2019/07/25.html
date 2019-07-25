@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Small Improvements | Adding an About page</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/utils.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,400i&display=swap">
+
+  <style>
+    @media (max-width: 47.99rem) {
+      header {
+        text-align: center;
+      }
+      nav {
+        display: none;
+      }
+    }
+
+    @media (min-width: 48rem) {
+      .display-flex {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container display-flex">
+      <a href="/" class="logo">Small Improvements</a>
+      <nav>
+        <a href="/about.html" class="nav-link">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container pt-100 pb-100">
+    <article>
+      <h1>Adding an About page</h1>
+
+      <p>
+        Since I already pretty much wrote up the entire About page the other day, I might at well add it to the site and put a link in the header. There is one caveat, however. Since this is heading navigation, it'd be better to put the link into a menu on mobile so the header doesn't get cluttered with links (I know two links wouldn't really be "cluttered" at this point, but it still goes against web design norms). Double however, I don't want to stay up late writing code to get the menu to work on mobile, so I'm just hiding the link to the About page once the viewport gets small enough to switch to the mobile layout. I'll add a mobile menu when I have more time to devote to programming. I do have a long weekend coming up, so maybe I will do it then. Though I will be doing a lot of driving and spending time with family, so we'll see &mdash; look at me already making excuses.
+      </p>
+    </article>
+  </main>
+</body>
+
+</html>
