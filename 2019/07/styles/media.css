@@ -19,10 +19,6 @@ img.center {
 }
 
 @media (min-width: 48em) {
-  article p {
-    text-align: justify;
-  }
-
   article .img-wrapper:nth-of-type(2n+1) {
     float: right;
     margin-left: 2em;
