@@ -1,0 +1,92 @@
+html {
+  font-family: 'Roboto', Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FAFAFA;
+  line-height: 1.6;
+}
+
+section + section {
+  margin-top: 3em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5em;
+  font-family: 'Roboto Slab', Georgia, serif;
+  font-weight: bold;
+}
+
+h1 { font-size: 2.0rem; }
+h2 { font-size: 1.6rem; }
+h3 { font-size: 1.2rem; }
+
+p, ul, ol {
+  margin-bottom: 0.8em;
+}
+
+ul, ol {
+  padding-left: 1.2em;
+}
+ul.clean {
+  padding-left: 0;
+  list-style: none;
+}
+
+a {
+  color: #00A9DE;
+  font-weight: 700;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+blockquote {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+  padding-left: 1em;
+  border-left: 0.3em solid lightgray;
+  font-family: 'Roboto Slab', Georgia, serif;
+}
+
+blockquote > p {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+@media (max-width: 47.99rem) {
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+  }
+
+  .img-wrapper {
+    text-align: center;
+  }
+}
+
+@media (min-width: 48rem) {
+  h1 { font-size: 3.0rem; }
+  h2 { font-size: 2.4rem; }
+  h3 { font-size: 1.8rem; }
+
+  p, ul, ol {
+    font-size: 1.2rem;
+  }
+
+  blockquote > p {
+    font-size: 1.44rem;
+  }
+}
