@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Small Improvements | Testing Google Analytics</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/utils.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/media.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/popup.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,400i&display=swap">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144980359-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-144980359-1');
+  </script>
+
+  <style>
+    @media (max-width: 47.99rem) {
+      header {
+        text-align: center;
+      }
+      nav {
+        display: none;
+      }
+    }
+
+    @media (min-width: 48rem) {
+      .display-flex {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  </style>
+</head>
+
+<body class="sunset">
+  <header>
+    <div class="container display-flex">
+      <a href="/" class="logo">Small Improvements</a>
+      <nav>
+        <a href="/about.html" class="nav-link">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container pt-100 pb-100">
+    <article>
+      <h1>Testing Google Analytics</h1>
+
+      <p>
+        I finally created a Google Analytics account and am now tracking traffic to my site. I currently only have analytics tracking on this post, the homepage, and the About page, and I will add the tracking tag to more pages once I am sure it is working properly. Setup seemed simple enough, though, so I am hoping there is not much I could have messed up. We'll see.
+      </p>
+
+      <p style="font-size: 0.9rem; color: gray;">
+        This means I can see you now, Don! You too, Dylan!
+      </p>
+
+    </article>
+  </main>
+</body>
+
+</html>
