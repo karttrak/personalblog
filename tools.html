@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>InkImps | Tools I use</title>
+  <link rel="stylesheet" href="2019/07/styles/reset.css">
+  <link rel="stylesheet" href="2019/07/styles/base.css">
+  <link rel="stylesheet" href="2019/07/styles/utils.css">
+  <link rel="stylesheet" href="2019/07/styles/layout.css">
+  <link rel="stylesheet" href="2019/07/styles/header.css">
+  <link rel="stylesheet" href="2019/07/styles/media.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,400i&display=swap">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144980359-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-144980359-1');
+  </script>
+
+  <style>
+    .kyle-style {
+      font-size: 1.44em;
+      font-weight: bold;
+      font-family: 'Roboto Slab', Georgia, serif;
+      color: #6B07C9;
+    }
+
+    .complete {
+      text-decoration: line-through;
+    }
+
+    @media (max-width: 47.99rem) {
+      header {
+        text-align: center;
+      }
+      nav {
+        display: none;
+      }
+    }
+
+    @media (min-width: 48rem) {
+      .display-flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      nav {
+        display: flex;
+      }
+      nav a {
+        display: inline-flex;
+        justify-content: center;
+        min-width: 5em;
+      }
+      nav a:hover {
+        text-decoration: none;
+        background-color: rgba(107, 7, 201, 0.1);
+        transition: background 0.1s ease-in-out;
+      }
+      nav a + a {
+        border-left: 1px solid black;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container display-flex">
+      <a href="/" class="logo kyle-style">InkImps</a>
+      <nav>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="goals.html" class="nav-link">Goals</a>
+        <a href="tools.html" class="nav-link">Tools</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container pt-100 pb-100">
+    <h1>Tools I use</h1>
+
+    <p>
+      Here are the tools I use to develop my site
+    </p>
+
+    <h2>Hosting</h2>
+
+    <p class="bold">
+      <a href="https://pages.github.com/" rel="noopener noreferrer">GitHub Pages</a>
+    </p>
+
+    <p>
+      This is a free feature that GitHub offers. I went with this option because, well, it's free. It also allows me to update my site with my own code, which I did not have the freedom to do when using the free tier of Wordpress. If you are not a developer, there are simple themes you can use to get started. You also don't need to know how to code to add posts. As long as you can learn Markdown, which is a simplified formatting language that allows you to add headings, links, images, and style your text a little bit (among other things). This is enough to get you started. Anything more and you will probably want to pay for a more robust service that allows for more customizations without having to write code.
+    </p>
+
+    <h2>Domain name system (DNS)</h2>
+
+    <p class="bold">
+      <a href="https://www.namecheap.com/" rel="noopener noreferrer">Namecheap</a>
+    </p>
+
+    <p>
+      I like it.
+    </p>
+
+    <h2></h2>
+  </main>
+</body>
+
+</html>
