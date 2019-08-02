@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>InkImps | July overview</title>
+  <title>InkImps | July lookback</title>
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/utils.css">
@@ -23,43 +23,95 @@
 
     gtag('config', 'UA-144980359-1');
   </script>
-
-  <style>
-    @media (max-width: 47.99rem) {
-      header {
-        text-align: center;
-      }
-      nav {
-        display: none;
-      }
-    }
-
-    @media (min-width: 48rem) {
-      .display-flex {
-        display: flex;
-        justify-content: space-between;
-      }
-    }
-  </style>
 </head>
 
-<body class="sunset">
+<body>
   <header>
-    <div class="container display-flex">
-      <a href="/" class="logo">Small Improvements</a>
+    <div class="container">
+      <a href="/" class="logo brand-heading brand-primary-color">InkImps</a>
       <nav>
-        <a href="/about.html" class="nav-link">About</a>
+        <a href="/about.html">About</a>
+        <a href="/goals.html">Goals</a>
+        <a href="/tools.html">Tools</a>
       </nav>
     </div>
   </header>
 
-  <main class="container pt-100 pb-100">
+  <main class="container">
     <article>
-      <h1>July overview</h1>
+      <h1>July lookback</h1>
 
       <p>
         July didn't bring very many visual changes, but the few changes I made were important. I finally came up with a real name for the blog and switched over to a new domain. HTTPS ended up working easily this time around thanks to a new configuration in my GitHub Pages settings. I added a simple header with one link in the navigation menu. I didn't post <i>every</i> day, but I'm happy with the amount of content pushed out. 17 posts in July brings me to 40 posts in total!
       </p>
+
+      <h2>Goals</h2>
+
+      <h3>Progress made</h3>
+
+      <p>
+        Let's take a look back at the goals I accomplished in July:
+      </p>
+
+      <ul>
+        <li>Add a header (July 12th)</li>
+        <li>Add an About page (July 22nd)</li>
+        <li>Add a Development Goals page (July 31st)</li>
+        <li>Add Google Analytics tracking (July 31st)</li>
+      </ul>
+
+      <p>
+        However, the success of the Google Analytics goal is still up in the air. I can see users (me) who are currently viewing the site, so I know <i>something</i> is working, but it doesn't show me a summary of data after the fact. I am not sure how Google Analytics differs from Google Tag Manager. I got a "site tag" from the setup instructions in the Analytics tab, but I had to create a new account to get Tag Manager set up, which gave me its own tag to add to the page with different instructions. So I will have to circle back on this task and make sure I get it done correctly before too long. I will just have to look up some video explanation &mdash; it's not intuitive to me just from browsing the Google Analytics site. And I hate Google's documentation pages. They never seem clear and straightforward to me for whatever reason. Things always seem to be misaligned from their documentation pages and what I actually see when I am trying to follow their instructions. Just throwing that out there.
+      </p>
+
+      <p>
+        Moving on!
+      </p>
+
+      <h3>Going forward</h3>
+
+      <p>
+        There are a few things I want to get done in August as well. These are the goals I have prioritized for one reason or another:
+      </p>
+
+      <ul>
+        <li>Add a Tools page (this is actually going out today)</li>
+        <li>Add a navigation menu on mobile</li>
+        <li>Look into using new fonts</li>
+        <li>Learn how to set up a CSS preprocessor</li>
+      </ul>
+
+      <p>
+        Let's go over these briefly.
+      </p>
+
+      <p>
+        Tools page &mdash; it's another thing to go in the header and I've basically completed it already (at least the first iteration of it), so that's an easy one to check off.
+      </p>
+
+      <p>
+        Mobile navigation will be good to add because I am adding more to the desktop navigation, but I am just hiding them on mobile due to limited header real estate on small screens. I need to code up a solution for this because I don't want a reduced mobile experience.
+      </p>
+
+      <p>
+        As for new fonts, I've already done some exploration on that front. I just want to look at something different. I am not the biggest fan of Roboto Slab for my headings.
+      </p>
+
+      <p>
+        Finally, a CSS preprocessor would really ease up my styling workflow. I am already used to using SCSS from a prior job, and there are so many times I want to use mixins or variables, but I don't have access to those yet. I need to get this done. Plus, it would be good to have one shared folder for all my styling and then just compile everything into a single CSS file that I import into my HTML page.
+      </p>
+
+      <h3>Being optimistic</h3>
+
+      <p>
+        Lastly, I have some stretch goals that I would <i>like</i> to complete, but won't be bummed out if I don't get around to these right now. They are mostly based on free time and creative motivation.
+      </p>
+
+      <ul>
+        <li>Create a logo</li>
+        <li>Create a favicon</li>
+        <li>Create a gallery component for posts with many images</li>
+      </ul>
     </article>
   </main>
 </body>
