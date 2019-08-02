@@ -1,4 +1,8 @@
-.bold { font-weight: 700; }
+/* Layout utils */
 .mb-100 { margin-bottom: 1em; }
 .pt-100 { padding-top: 1em; }
 .pb-100 { padding-bottom: 1em; }
+
+/* Typography utils */
+.bold { font-weight: 700; }
+.strike { text-decoration: line-through; }

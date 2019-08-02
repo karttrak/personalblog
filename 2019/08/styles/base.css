@@ -57,24 +57,14 @@ blockquote > p {
   font-size: 1.2rem;
 }
 
-.italic {
-  font-style: italic;
+.brand-primary-color {
+  color: #6B07C9;
 }
 
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-}
-
-@media (max-width: 47.99rem) {
-  h1, h2, h3, h4, h5, h6 {
-    text-align: center;
-  }
-
-  .img-wrapper {
-    text-align: center;
-  }
+.brand-heading {
+  font-size: 1.44em;
+  font-weight: bold;
+  font-family: 'Roboto Slab', Georgia, serif;
 }
 
 @media (min-width: 48rem) {

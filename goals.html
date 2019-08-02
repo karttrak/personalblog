@@ -22,62 +22,16 @@
 
     gtag('config', 'UA-144980359-1');
   </script>
-
-  <style>
-    .kyle-style {
-      font-size: 1.44em;
-      font-weight: bold;
-      font-family: 'Roboto Slab', Georgia, serif;
-      color: #6B07C9;
-    }
-
-    .complete {
-      text-decoration: line-through;
-    }
-
-    @media (max-width: 47.99rem) {
-      header {
-        text-align: center;
-      }
-      nav {
-        display: none;
-      }
-    }
-
-    @media (min-width: 48rem) {
-      .display-flex {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-      nav {
-        display: flex;
-      }
-      nav a {
-        display: inline-flex;
-        justify-content: center;
-        min-width: 5em;
-      }
-      nav a:hover {
-        text-decoration: none;
-        background-color: rgba(107, 7, 201, 0.1);
-        transition: background 0.1s ease-in-out;
-      }
-      nav a + a {
-        border-left: 1px solid black;
-      }
-    }
-  </style>
 </head>
 
 <body>
   <header>
-    <div class="container display-flex">
-      <a href="/" class="logo kyle-style">InkImps</a>
+    <div class="container">
+      <a href="/" class="logo brand-heading brand-primary-color">InkImps</a>
       <nav>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="goals.html" class="nav-link">Goals</a>
-        <a href="tools.html" class="nav-link">Tools</a>
+        <a href="about.html">About</a>
+        <a href="goals.html">Goals</a>
+        <a href="tools.html">Tools</a>
       </nav>
     </div>
   </header>
@@ -90,11 +44,13 @@
     </p>
 
     <ul>
-      <li><span class="complete">Add an About page</span> (July 22nd, 2019)</li>
-      <li><span class="complete">Add Google Analytics tracking</span> (July 31st, 2019)</li>
-      <li><span class="complete">Add a Development Goals page</span> (July 31st, 2019)</li>
-      <li>Add a page showing the development tools I use</li>
-      <li>Add a style guide</li>
+      <li><span class="strike">Add a header</span> (July 12th, 2019)</li>
+      <li><span class="strike">Add an About page</span> (July 22nd, 2019)</li>
+      <li><span class="strike">Add Google Analytics tracking</span> (July 31st, 2019)</li>
+      <li><span class="strike">Add a Development Goals page</span> (July 31st, 2019)</li>
+      <li><span class="strike">Add a page showing the development tools I use</span> (August 1st, 2019)</li>
+      <li>Add a footer</li>
+      <li>Add a style guide (mostly for debugging style changes)</li>
       <li>Set up an SSL cert</li>
       <li>Create a logo</li>
       <li>Create a favicon</li>
