@@ -1,4 +1,5 @@
 /* Layout utils */
+.mb-50 { margin-bottom: 0.5em; }
 .mb-100 { margin-bottom: 1em; }
 .pt-100 { padding-top: 1em; }
 .pb-100 { padding-bottom: 1em; }
