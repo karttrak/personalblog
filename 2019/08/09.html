@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>InkImps | Final day "live tweet"</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/utils.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/media.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/popup.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,400i&display=swap">
+
+  <style>
+    time {
+      font-weight: 700;
+    }
+
+    .tweet-grid {
+      display: grid;
+      grid-template-areas:
+        'time'
+        'event';
+    }
+
+    @media (max-width: 47.99rem) {
+      time ~ time {
+        margin-top: 1em;
+      }
+    }
+
+    @media (min-width: 48rem) {
+      .tweet-grid {
+        grid-row-gap: 0.5em;
+        grid-column-gap: 0.5em;
+        grid-template-areas: 'time event';
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="/" class="logo brand-heading brand-primary-color">InkImps</a>
+      <nav>
+        <a href="/about.html">About</a>
+        <a href="/goals.html">Goals</a>
+        <a href="/tools.html">Tools</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article>
+      <section>
+        <h1>Final day "live tweet"</h1>
+
+        <p>
+          Today is my last day working at my current job. I want to make sure I don't forget anything, so I'm going to transcribe some of the day's events as they happen.
+        </p>
+
+        <p class="tweet-grid">
+          <time>12:15 AM:</time> <span>Start this post.</span>
+          <time>12:37 AM:</time> <span>Finish styling the layout using dummy data. I finally got to use CSS Grid for something useful. It was fun playing around with it to learn how it works.</span>
+          <time>12:40 AM:</time> <span>Go to bed.</span>
+        </p>
+      </section>
+    </article>
+  </main>
+</body>
+
+</html>
