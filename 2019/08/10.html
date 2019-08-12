@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>InkImps | JLo's birthday</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/utils.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/media.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/popup.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,400i&display=swap">
+
+  <style>
+    time {
+      font-weight: 700;
+    }
+
+    .tweet-grid {
+      display: grid;
+      grid-template-areas:
+        'time'
+        'event';
+    }
+
+    @media (max-width: 47.99rem) {
+      time ~ time {
+        margin-top: 1em;
+      }
+    }
+
+    @media (min-width: 48rem) {
+      .tweet-grid {
+        grid-row-gap: 0.5em;
+        grid-column-gap: 0.5em;
+        grid-template-areas: 'time event';
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="/" class="logo brand-heading brand-primary-color">InkImps</a>
+      <nav>
+        <a href="/about.html">About</a>
+        <a href="/goals.html">Goals</a>
+        <a href="/tools.html">Tools</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article>
+      <section>
+        <h1>JLo's birthday</h1>
+
+        <p>
+          Today is my friend's birthday. He goes by JLo. A few of us went out for a little sunset hike in Shenendoah with him. We wanted to do Bearfence before it got dark since the terrain is pretty treacherous and then run over to Stony Man to watch the actual sunset. But by the time we got to Bearfence, we thought it'd take too long to make it back out to Stony Man. Little did we know Bearfence was actually a lot easier than we thought it'd be. We hiked half of it, turned back to grab another headlamp and a bag of watermelon from the car, and then hiked all the way to the end. We still had around an hour and a half to kill before the sun would start to set.
+        </p>
+
+        <img class="mb-50" src="media/jlo-bday-1.jpg">
+
+        <p>
+          We hung out at the end of the trail for a bit and chatted some time away. But then we backtracked to the first viewpoint again since it has a nice 360&deg; view. More chatting. But this time we also busted out the watermelon to munch on while we still had ~40 minutes to spare.
+        </p>
+
+        <img class="mb-50" src="media/jlo-bday-2.jpg">
+
+        <p>
+          Finally the sun started to set, painting the sky in streaks of red and orange as it fell.
+        </p>
+
+        <img class="mb-50" src="media/jlo-bday-3.jpg">
+
+        <p>
+          And instead of watching the sunset, JLo felt the need to do a bridge for the 'gram.
+        </p>
+
+        <img class="mb-50" src="media/jlo-bday-4.jpg">
+
+        <p>
+          The nighttime trek back down wasn't too bad. It helped that it was our fourth time traversing that stretch of trail. We finished off the night with a bunch of delicious food from a Korean restaurant.
+        </p>
+
+        <img src="media/jlo-bday-5.jpg">
+      </section>
+    </article>
+  </main>
+</body>
+
+</html>
