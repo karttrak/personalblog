@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>InkImps | DSP launch day schedule</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/utils.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/media.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/popup.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,400i&display=swap">
+
+  <style>
+    time {
+      font-weight: 700;
+    }
+
+    .schedule {
+      display: grid;
+      grid-template-areas:
+        'time'
+        'event';
+    }
+
+    @media (max-width: 47.99rem) {
+      time ~ time {
+        margin-top: 1em;
+      }
+    }
+
+    @media (min-width: 48rem) {
+      .schedule {
+        grid-row-gap: 0.5em;
+        grid-column-gap: 0.5em;
+        grid-template-areas: 'time event';
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="/" class="logo brand-heading brand-primary-color">InkImps</a>
+      <nav>
+        <a href="/about.html">About</a>
+        <a href="/goals.html">Goals</a>
+        <a href="/tools.html">Tools</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article>
+      <section>
+        <h1>DSP launch day schedule</h1>
+
+        <p>
+          We are launching our first routes as an Amazon <span class="popup-target">DSP<span class="popup">Delivery Service Provider</span> today!</span> Below is our schedule for the day. Today was a little hectic to get initial things set up, plus last night was a whole fiasco getting our vans from the dealership, but otherwise this should be a fair estimate of what I will be doing for my new job from here on out.
+        </p>
+
+        <p class="schedule">
+          <time>12:45 AM:</time> <span>Go to sleep (after dealing with a cluster of a van situation last night)</span>
+          <time>5:50 AM:</time> <span>Wake up. Do any last-minute prep necessary. Load up car and van with our equipment to bring to the warehouse.</span>
+          <time>7:00 AM:</time> <span>Head out to the warehouse. Find we don't have a dedicated work station set up for us like we were told.</span>
+          <time>7:45 AM:</time> <span>Head to the lot where our vans are parked.</span>
+          <time>8:15 AM:</time> <span>Our first drivers arrive. Try to prep vehicles while also introducing ourselves and getting them ready for the day.</span>
+          <time>8:55 AM:</time> <span>Gather all our drivers for a morning standup meeting.</span>
+          <time>9:05 AM:</time> <span>Drivers roll out en route to the warehouse for package pickup.</span>
+          <time>9:15 AM:</time> <span>Arrive at the warehouse and begin our "under the roof" process of loading up vans.</span>
+          <time>9:45 AM:</time> <span>Drivers are packed and roll out to begin their routes. We stay back to set up our work station that is now ready for us.</span>
+          <time>10:15 AM:</time> <span>Go to Cracker Barrel for breakfast.</span>
+          <time>11:30 AM:</time> <span>Go home. Rest up. Take a nap.</span>
+          <time>1:30 PM:</time> <span>Answer driver questions. Do administrative stuff.</span>
+          <time>3:00 PM:</time> <span>Arrive at the warehouse to interview another driver. Do more admin stuff afterward.</span>
+          <time>6:00 PM:</time> <span>First driver returns to the warehouse. My mom and I receive the remaining drivers while my dad heads to the lot to collect keys to when our drivers return the vans.</span>
+          <time>7:20 PM:</time> <span>Last driver returns to the warehouse. Close up shop.</span>
+          <time>8:00 PM:</time> <span>Order Chinese for dinner and head to parents' house.</span>
+          <time>8:10 PM:</time> <span>One of our drivers calls me to say he left his phone in the van. We turn around to meet him at the lot and get his phone. Head home again.</span>
+          <time>9:00 PM:</time> <span>Get home. Devour a ton of food and relax a bit.</span>
+          <time>9:45 PM:</time> <span>I head back to my apartment. There is a ton of traffic due to construction.</span>
+          <time>10:40 PM:</time> <span>Get home. Unpack. Hurriedly get ready for bed.</span>
+          <time>11:00 PM:</time> <span>Pass out for another 5:50 wakeup.</span>
+        </p>
+      </section>
+    </article>
+  </main>
+</body>
+
+</html>
